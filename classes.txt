@@ -232,6 +232,10 @@ IMG_6738,149,"Spring Usher"
 IMG_6563,150,"Agriphila latistria"
 IMG_6675,151,"Red-line Quaker"
 IMG_6673,152,Merveille du Jour"
+IMG_6648,61,"Cabbage Moth"
+IMG_6634,153,"Sallow ab. flavescens"
+IMG_6668,154,"Deep-brown Dart"
+IMG_6602,155,"Tinea semifulvella"
 
 
 

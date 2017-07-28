@@ -236,8 +236,13 @@ IMG_6648,61,"Cabbage Moth"
 IMG_6634,153,"Sallow ab. flavescens"
 IMG_6668,154,"Deep-brown Dart"
 IMG_6602,155,"Tinea semifulvella"
-
-
+IMG_6596,156,"Cypress Pug"
+IMG_6593,114,"Gold Spot"
+IMG_6592,157,"Rusty-dot Pearl"
+IMG_6588,158,"Epinotia ramella"
+IMG_6590,158,"Epinotia ramella"
+IMG_6558,159,"Dark Spectacle"
+IMG_6555,160,"Agriphila selasella"
 
 
 

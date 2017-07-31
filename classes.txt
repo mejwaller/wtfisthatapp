@@ -265,6 +265,13 @@ IMG_6474,170,"Aethes rubigana"
 IMG_6473,170,"Aethes rubigana"
 IMG_6472,171,"European Corn-borer"
 IMG_6470,12,"Sharp-angled Peacock"
+IMG_6465,172,"Silver Hook"
+IMG_6464,172,"Large Wainscot"
+IMG_6462,34,"Evergestis pallidata"
+IMG_6461,173,"Crambus pascuella"
+IMG_6457,174,"Chinese Character"
+
+
 
 
 

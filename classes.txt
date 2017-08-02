@@ -281,7 +281,12 @@ IMG_6420,179,"Four-dotted Footman"
 IMG_6416,180,"Double Square-spot"
 IMG_6415,181,"Short-cloaked Moth"
 IMG_6412,182,"Minor Shoulder-knot"
- 
+IMG_6386,86,"Brown China-mark"
+IMG_6385,183,"Barred Straw"
+IMG_6373,173,"Crambus pascuella"
+IMG_6375,173,"Crambus pascuella"
+IMG_6360,184,"Cinnabar"
+
 
 
 

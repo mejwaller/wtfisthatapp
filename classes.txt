@@ -286,6 +286,18 @@ IMG_6385,183,"Barred Straw"
 IMG_6373,173,"Crambus pascuella"
 IMG_6375,173,"Crambus pascuella"
 IMG_6360,184,"Cinnabar"
+IMG_6354,185,"Great Oak Beauty"
+IMG_6344,186,"Buff Arches"
+IMG_6336,187,"Currant Clearwing"
+IMG_6342,187,"Currant Clearwing"
+IMG_6326,188,"Spatalistis bifasciana"
+IMG_6322,189,"Large Fruit-tree Tortrix"
+IMG_6319,190,"Variegated Golden Tortrix"
+IMG_6317,191,"Barred Fruit-tree Tortrix"
+IMG_6316,189,"Large Fruit-tree Tortrix"
+IMG_6330,192,"Apotomis turbidana"
+IMG_6332,192,"Apotomis turbidana"
+IMG_6312,193,"Aleimma loeflingiana"
 
 
 

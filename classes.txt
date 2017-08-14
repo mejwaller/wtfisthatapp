@@ -298,6 +298,16 @@ IMG_6316,189,"Large Fruit-tree Tortrix"
 IMG_6330,192,"Apotomis turbidana"
 IMG_6332,192,"Apotomis turbidana"
 IMG_6312,193,"Aleimma loeflingiana"
+IMG_6304,194,"Brindled White-spot"
+IMG_6296,195,"Marbled Orchard Tortrix"
+IMG_6295,195,"Marbled Orchard Tortrix"
+IMG_6291,155,"Tinea semifulvella"
+IMG_6293,155,"Tinea semifulvella"
+IMG_6287,193,"Aleimma loeflingiana"
+IMG_6282,12,"Sharp-angled Peacock"
+IMG_6272,96,"Pseudargyrotoza conwagana"
+IMG_6266,12,"Sharp-angled Peacock"
+IMG_6265,107,"Crambus lathoniellus"
 
 
 

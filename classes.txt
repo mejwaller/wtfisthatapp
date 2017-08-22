@@ -308,9 +308,11 @@ IMG_6282,12,"Sharp-angled Peacock"
 IMG_6272,96,"Pseudargyrotoza conwagana"
 IMG_6266,12,"Sharp-angled Peacock"
 IMG_6265,107,"Crambus lathoniellus"
-
-
-
+IMG_6262,196,"Birch Mocha"
+IMG_6254,197,"Grass Rivulet"
+IMG_6247,25,"Common Carpet"
+IMG_6242,198,"Light Brown Apple Moth"
+IMG_6244,198,"Light Brown Apple Moth"
 
 
 

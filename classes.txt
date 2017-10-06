@@ -313,6 +313,11 @@ IMG_6254,197,"Grass Rivulet"
 IMG_6247,25,"Common Carpet"
 IMG_6242,198,"Light Brown Apple Moth"
 IMG_6244,198,"Light Brown Apple Moth"
+IMG_8879,88,"Feathered Gothic"
+IMG_8877,189, "Large Fruit-tree Tortrix"
+IMG_8875,199,"Neglected Rustic"
+IMG_8874,44,"Maiden's Blush"
+IMG_8871,200,"Flounced Rustic"
 
 
 

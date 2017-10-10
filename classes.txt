@@ -318,6 +318,12 @@ IMG_8877,189, "Large Fruit-tree Tortrix"
 IMG_8875,199,"Neglected Rustic"
 IMG_8874,44,"Maiden's Blush"
 IMG_8871,200,"Flounced Rustic"
+IMG_8683,201,"Scarce Bordered Straw"
+IMG_8680,202,"Meal Moth"
+IMG_8679,203,"Miller"
+IMG_8678,201,"Scarce Bordered Straw"
+IMG_8675,204,"Engrailed"
+
 
 
 

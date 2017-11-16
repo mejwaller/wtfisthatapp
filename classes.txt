@@ -327,8 +327,14 @@ IMG_8664,205,"Peacock"
 IMG_8654,15,"Chequered Fruit-tree Tortrix"
 IMG_8653,206,"Rosy Rustic"
 IMG_8651,207,"Agriphila geniculea"
- 
-
+IMG_8617,54,"White-point"
+IMG_8559,48,"Anania coronata" 
+IMG_8555,35,"Sallow Kitten"
+IMG_8556,35,"Sallow Kitten"
+IMG_8543,17,"Catoptria pinella"
+IMG_8513,206,"Rosy Rustic"
+IMG_8437,208,"Gypsy Moth"
+IMG_8432,209,"Fan-foot"
 
 
 

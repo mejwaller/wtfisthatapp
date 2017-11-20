@@ -335,6 +335,16 @@ IMG_8543,17,"Catoptria pinella"
 IMG_8513,206,"Rosy Rustic"
 IMG_8437,208,"Gypsy Moth"
 IMG_8432,209,"Fan-foot"
+IMG_8431,210,"Knot Grass"
+IMG_8428,211,"Balsam Carpet"
+IMG_8407,212,"Sharp-angled Carpet"
+IMG_8405,25,"Common Carpet"
+IMG_8402,74,"Small Mottled Willow"
+IMG_8400,213,"Donacaula forficella"
+IMG_8398,176,"Synaphe punctalis"
+IMG_8397,55,"Mocha"
+
+
 
 
 

@@ -343,6 +343,13 @@ IMG_8402,74,"Small Mottled Willow"
 IMG_8400,213,"Donacaula forficella"
 IMG_8398,176,"Synaphe punctalis"
 IMG_8397,55,"Mocha"
+IMG_8391,214,"Blastobasis lacticolella"
+IMG_8393,214,"Blastobasis lacticolella"
+IMG_8394,214,"Blastobasis lacticolella"
+IMG_8378,210,"Knot Grass"
+IMG_8375,215,"Gold Triangle"
+IMG_8371,28,"True Lover's Knot"
+
 
 
 

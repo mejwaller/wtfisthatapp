@@ -349,6 +349,11 @@ IMG_8394,214,"Blastobasis lacticolella"
 IMG_8378,210,"Knot Grass"
 IMG_8375,215,"Gold Triangle"
 IMG_8371,28,"True Lover's Knot"
+IMG_8325,216,"Acleris emargana"
+IMG_8320,217,"Double Lobed"
+IMG_8318206,"Agriphila geniculea"
+
+
 
 
 

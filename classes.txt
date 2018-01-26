@@ -34,7 +34,7 @@ IMG_4908,24,"Tawny-barred Angle"
 IMG_4904,25,"Common Carpet"
 IMG_4900,26,"Common Wave"
 IMG_4899,27,"Pebble Hook-tip"
-IMG_4885,28,"True Lover's Knot"
+IMG_4885,28,"True Lovers Knot"
 IMG_4883,29,"Iron Prominent"
 IMG_4881,30,"Small Fan-footed Wave"
 IMG_4879,31,"Ruby Tiger"
@@ -245,7 +245,7 @@ IMG_6558,159,"Dark Spectacle"
 IMG_6555,160,"Agriphila selasella"
 IMG_6547,161,"Peach Blossom"
 IMG_6543,162,"Ear Moth"
-IMG_6538,163,"Mocha"
+IMG_6538,55,"Mocha"
 IMG_6531,71,"Ancylis badiana"
 IMG_6530,15,"Chequered Fruit-tree Tortrix"
 IMG_6527,164,"Purple Thorn"
@@ -348,15 +348,7 @@ IMG_8393,214,"Blastobasis lacticolella"
 IMG_8394,214,"Blastobasis lacticolella"
 IMG_8378,210,"Knot Grass"
 IMG_8375,215,"Gold Triangle"
-IMG_8371,28,"True Lover's Knot"
+IMG_8371,28,"True Lovers Knot"
 IMG_8325,216,"Acleris emargana"
 IMG_8320,217,"Double Lobed"
 IMG_8318,206,"Agriphila geniculea"
-
-
-
-
-
-
-
-

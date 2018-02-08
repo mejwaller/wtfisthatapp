@@ -352,3 +352,12 @@ IMG_8371,28,"True Lovers Knot"
 IMG_8325,216,"Acleris emargana"
 IMG_8320,217,"Double Lobed"
 IMG_8318,206,"Agriphila geniculea"
+IMG_9159,218,"December Moth"
+IMG_9070,219,"Yellow-line Quaker"
+IMG_9058,5,"Chestnut"
+IMG_9062,5,"Chestnut"
+IMG_9045,219,"Yellow-line Quaker"
+IMG_9044,220,"Blairs Shoulder-knot"
+
+
+

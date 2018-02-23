@@ -3,22 +3,32 @@
 import csv
 
 labdict=dict()
+imdict=dict()
+i=0
 
 with open("/home/mejwaller/classes.txt") as csvfile:
     reader=csv.reader(csvfile,delimiter=',',quotechar='"')
     for row in reader:
         if len(row) > 0:
             #print row
-            number = row[1]
             label=row[2]
-            if label in labdict.values():
+            imref=row[0]
+            if label in labdict:
                 print "Found label " + label
-                i=lablist.
-                if i != int(number):
-                    print "error - " + label + " exists at index " + str(i) + " but in file it is given index " + number
-                    raise SystemExit
+                imdict[imref]=labdict[label]
+                print "Marking image " + imref + " as index " + str(labdict[label])
             else:
-                lablist.insert(int(number)-1,label)
+                print "Inserting " + label + " at index " + str(i)
+                labdict[label]=i
+                imdict[imref]=i
+                print "Marking image " + imref + " as NEW index " + str(i)
+                i+=1
+csvfile.close()
+outfile = open("imglabels.txt","w")
+for things in imdict:
+    outfile.write(things + " " + str(imdict[things]) + "\n")
+outfile.close()
+
 
 
 

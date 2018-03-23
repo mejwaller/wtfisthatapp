@@ -2,8 +2,8 @@ import numpy as np
 import os
 from PIL import Image
 
-inpath="/home/mejwaller/dunpics/"
-outpath="/home/mejwaller/normalizedpics/"
+inpath="./dunpics/"
+outpath="./normalizedpics/"
 
 files=os.listdir(inpath)
 #print files

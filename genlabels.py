@@ -6,7 +6,7 @@ labdict=dict()
 imdict=dict()
 i=0
 
-with open("/home/mejwaller/classes.txt") as csvfile:
+with open("./classes.txt") as csvfile:
     reader=csv.reader(csvfile,delimiter=',',quotechar='"')
     for row in reader:
         if len(row) > 0:

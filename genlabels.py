@@ -1,5 +1,3 @@
-#notes - mixing dicst and lists here - wip
-
 import csv
 
 labdict=dict()
@@ -26,7 +24,7 @@ with open("./classes.txt") as csvfile:
 csvfile.close()
 outfile = open("imglabels.txt","w")
 for things in imdict:
-    outfile.write(things + " " + str(imdict[things]) + "\n")
+    outfile.write(things + " " + str(imdict[things]) + " " + labdict.keys()[labdict.values().index(imdict[things])] + "\n")
 outfile.close()
 
 

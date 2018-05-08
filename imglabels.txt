@@ -1,6 +1,10 @@
 IMG_4885 28 True Lovers Knot
 IMG_4881 30 Small Fan-footed Wave
 IMG_4883 29 Iron Prominent
+IMG_9722 8 Pine Beauty
+IMG_9720 7 Clouded Drab
+IMG_9727 147 Twin-spotted Quaker
+IMG_9724 231 Brindled Pug
 IMG_4879 31 Ruby Tiger
 IMG_4878 32 Dotted Clay
 IMG_6291 156 Tinea semifulvella
@@ -11,14 +15,22 @@ IMG_4873 11 Sharp-angled Peacock
 IMG_6423 180 Green Pug
 IMG_6354 187 Great Oak Beauty
 IMG_5244 82 Mother of Pearl
+IMG_9678 4 Chestnut
+IMG_9770 230 Brindled Beauty
 IMG_5157 23 Pale Prominent
 IMG_5150 75 Chevron
 IMG_5153 76 Bordered Straw
 IMG_5014 13 Rush Veneer
+IMG_8291 242 Acleris hastiana
 IMG_7116 11 Sharp-angled Peacock
 IMG_8683 203 Scarce Bordered Straw
 IMG_8680 204 Meal Moth
+IMG_9779 4 Chestnut
+IMG_9672 6 Yellow Horned
+IMG_9675 7 Clouded Drab
 IMG_9159 221 December Moth
+IMG_9676 3 Hebrew Character
+IMG_8639 235 Frosted Orange
 IMG_6634 154 Sallow ab. flavescens
 IMG_6888 135 Muslin Moth
 IMG_5123 71 Ancylis badiana
@@ -31,8 +43,11 @@ IMG_6887 136 Coxcomb Prominent
 IMG_6885 109 Pale Tussock ab. concolor
 IMG_0578 65 Dingy Shell
 IMG_5084 12 Blastobasis adustella
+IMG_9813 231 Brindled Pug
 IMG_5089 11 Sharp-angled Peacock
+IMG_9692 147 Twin-spotted Quaker
 IMG_7428 109 Pale Tussock ab. concolor
+IMG_9697 0 Oak Beauty
 IMG_7421 111 Epinotia bilunana
 IMG_7426 110 Garden Pebble
 IMG_6496 169 Agriphila straminella
@@ -43,6 +58,7 @@ IMG_5233 81 Caloptilia stigmatella
 IMG_6648 61 Cabbage Moth
 IMG_4841 44 Maiden's Blush
 IMG_4842 43 Dun-bar
+IMG_8260 175 Crambus pascuella
 IMG_4844 42 Nut-tree Tussock
 IMG_6304 196 Brindled White-spot
 IMG_8679 205 Miller
@@ -54,6 +70,7 @@ IMG_0568 67 Brimstone Moth
 IMG_6991 128 Chocolate-tip
 IMG_6992 127 Puss Moth
 IMG_6997 126 May Highflyer
+IMG_9788 149 Herald
 IMG_4988 14 Chequered fruit-tree Tortrix
 IMG_6293 156 Tinea semifulvella
 IMG_4860 36 September Thorn
@@ -62,18 +79,27 @@ IMG_4835 46 Rosy Footman
 IMG_6465 173 Silver Hook
 IMG_5423 95 Pyrausta purpuralis
 IMG_4836 20 Pine Hawk
+IMG_9807 231 Brindled Pug
 IMG_6461 175 Crambus pascuella
 IMG_6462 34 Evergestis pallidata
+IMG_9804 4 Chestnut
 IMG_6543 163 Ear Moth
 IMG_8879 89 Feathered Gothic
 IMG_4936 16 Broad-bordered Yellow Underwing
 IMG_6547 162 Peach Blossom
 IMG_4838 45 Black Arches
+IMG_9789 9 Common Quaker
 IMG_9070 222 Yellow-line Quaker
+IMG_9771 6 Yellow Horned
+IMG_9679 7 Clouded Drab
 IMG_6903 131 Pale Pinion
+IMG_9778 4 Chestnut
 IMG_6901 132 Lesser Swallow Prominent
+IMG_9673 234 Small Quaker
+IMG_9674 9 Common Quaker
 IMG_0791 53 Kent Black Arches
 IMG_6905 118 Small Chocolate-tip
+IMG_9677 147 Twin-spotted Quaker
 IMG_6262 198 Birch Mocha
 IMG_6266 11 Sharp-angled Peacock
 IMG_6265 108 Crambus lathoniellus
@@ -84,13 +110,16 @@ IMG_8397 55 Mocha
 IMG_8398 178 Synaphe punctalis
 IMG_5161 77 Oak Hook-tip
 IMG_6846 42 Nut-tree Tussock
+IMG_9810 9 Common Quaker
 IMG_6844 42 Nut-tree Tussock
 IMG_8559 210 Anania coronata 
 IMG_8556 35 Sallow Kitten
 IMG_8555 35 Sallow Kitten
 IMG_6848 142 Lunar Marbled Brown
 IMG_7164 116 Broken-barred Carpet
+IMG_8995 227 Spruce Carpet
 IMG_7162 117 Common Marbled Carpet
+IMG_8993 228 Feathered Thorn
 IMG_7081 123 Buff-tip
 IMG_7080 11 Sharp-angled Peacock
 IMG_7083 81 Caloptilia stigmatella
@@ -99,16 +128,23 @@ IMG_7466 101 Diamond-back Moth
 IMG_7462 101 Diamond-back Moth
 IMG_7461 102 Scorched Wing
 IMG_7469 100 Figure of Eighty
+IMG_0031 250 Double-striped Pug
+IMG_0033 251 Tawny Pinion
+IMG_0035 252 Narrow-winged Pug
 IMG_6596 157 Cypress Pug
 IMG_6590 159 Epinotia ramella
 IMG_6592 158 Rusty-dot Pearl
 IMG_6593 115 Gold Spot
+IMG_8300 209 Agriphila geniculea
+IMG_8306 169 Agriphila straminella
 IMG_6602 156 Tinea semifulvella
+IMG_8304 209 Agriphila geniculea
 IMG_6762 1 Dotted Border
 IMG_6760 2 Small Brindled Beauty
 IMG_6764 0 Oak Beauty
 IMG_4962 12 Blastobasis adustella
 IMG_4965 12 Blastobasis adustella
+IMG_9682 4 Chestnut
 IMG_4910 23 Pale Prominent
 IMG_5269 86 Angle Shades
 IMG_5268 61 Cabbage Moth
@@ -121,6 +157,10 @@ IMG_0591 63 Epinotia immundana
 IMG_0597 61 Cabbage Moth
 IMG_6336 189 Currant Clearwing
 IMG_0595 62 Tachystola acroxantha
+IMG_9738 6 Yellow Horned
+IMG_9734 9 Common Quaker
+IMG_9736 3 Hebrew Character
+IMG_9731 7 Clouded Drab
 IMG_4899 27 Pebble Hook-tip
 IMG_6942 19 Poplar Hawk
 IMG_6941 83 Acleris notana/ferrugana
@@ -138,17 +178,34 @@ IMG_9021 224 Black Rustic
 IMG_7123 122 Eyed Hawk
 IMG_7120 122 Eyed Hawk
 IMG_7125 121 Marbled Brown
+IMG_9742 234 Small Quaker
+IMG_9743 138 Dotted Chestnut
+IMG_9744 232 Early Tooth-striped
 IMG_7450 108 Crambus lathoniellus
 IMG_6899 133 Acleris literana
 IMG_5136 51 Orthotelia sparganella
 IMG_5134 74 Small Mottled Willow
 IMG_6895 63 Epinotia immundana
 IMG_6897 134 Pebble Prominent
+IMG_8947 229 Pinion-streaked Snout
+IMG_8941 78 Pine Carpet
+IMG_8943 93 Yellow Shell
+IMG_8942 91 Red Underwing
+IMG_9687 6 Yellow Horned
+IMG_9681 230 Brindled Beauty
+IMG_9680 8 Pine Beauty
 IMG_7418 111 Epinotia bilunana
 IMG_7419 111 Epinotia bilunana
 IMG_7415 112 Udea olivalis
+IMG_9689 7 Clouded Drab
 IMG_7413 113 Flame Carpet
 IMG_7410 114 Clouded-bordered Brindle ab. combusta
+IMG_9763 3 Hebrew Character
+IMG_0002 142 Lunar Marbled Brown
+IMG_0004 142 Lunar Marbled Brown
+IMG_0005 3 Hebrew Character
+IMG_0006 234 Small Quaker
+IMG_0007 246 Dyseriocrania subpurpurella
 IMG_5221 80 Six-striped Rustic
 IMG_6793 144 Diurnea fagella
 IMG_6790 145 Red-green Carpet
@@ -164,8 +221,12 @@ IMG_8617 54 White-point
 IMG_6985 23 Pale Prominent
 IMG_6984 23 Pale Prominent
 IMG_5184 78 Pine Carpet
+IMG_8298 178 Synaphe punctalis
+IMG_8294 243 Crambus perlella
+IMG_8296 243 Crambus perlella
 IMG_6385 185 Barred Straw
 IMG_6386 87 Brown China-mark
+IMG_9836 233 Satellite
 IMG_5359 66 Celypha lacunana
 IMG_6474 171 Aethes rubigana
 IMG_6473 171 Aethes rubigana
@@ -177,13 +238,19 @@ IMG_4923 18 Hoary Footman
 IMG_4920 19 Poplar Hawk
 IMG_9062 4 Chestnut
 IMG_7005 121 Marbled Brown
+IMG_9668 0 Oak Beauty
+IMG_9700 147 Twin-spotted Quaker
+IMG_9701 4 Chestnut
 IMG_7003 44 Maiden's Blush
+IMG_9703 3 Hebrew Character
 IMG_6937 129 Lime Hawk
 IMG_6934 130 Orange Footman
 IMG_6935 83 Acleris notana/ferrugana
 IMG_6933 26 Common Wave
 IMG_6931 62 Tachystola acroxantha
+IMG_8917 36 September Thorn
 IMG_6272 97 Pseudargyrotoza conwagana
+IMG_8971 174 Large Wainscot
 IMG_0609 59 Clouded Border
 IMG_0605 27 Pebble Hook-tip
 IMG_0600 60 Oak Nycteoline
@@ -200,6 +267,8 @@ IMG_7078 124 Scalloped Hazel
 IMG_6588 159 Epinotia ramella
 IMG_5386 91 Red Underwing
 IMG_5383 90 Vestal
+IMG_9688 7 Clouded Drab
+IMG_8892 241 Pink-barred Sallow
 IMG_6754 5 March Moth
 IMG_6755 4 Chestnut
 IMG_6752 6 Yellow Horned
@@ -210,6 +279,9 @@ IMG_8877 201  "Large Fruit-tree Tortrix"
 IMG_8871 202 Flounced Rustic
 IMG_6758 3 Hebrew Character
 IMG_8311 192 Variegated Golden Tortrix
+IMG_8252 244 Dark Fruit-tree Tortrix
+IMG_8254 244 Dark Fruit-tree Tortrix
+IMG_8257 68 Dwarf Cream Wave
 IMG_6538 55 Mocha
 IMG_6530 164 Chequered Fruit-tree Tortrix
 IMG_6531 71 Ancylis badiana
@@ -229,15 +301,30 @@ IMG_6322 191 Large Fruit-tree Tortrix
 IMG_0581 31 Ruby Tiger
 IMG_6326 190 Spatalistis bifasciana
 IMG_0583 11 Sharp-angled Peacock
+IMG_9691 9 Common Quaker
 IMG_0869 52 Double Kidney
 IMG_5409 92 Epinotia nisella
+IMG_9835 8 Pine Beauty
+IMG_9832 231 Brindled Pug
+IMG_9698 234 Small Quaker
+IMG_9833 143 Grey Shoulder-knot
 IMG_0881 50 Honeysuckle Moth
 IMG_0882 49 Pyrausta aurata
 IMG_0884 48 Anania coronata
 IMG_6810 143 Grey Shoulder-knot
+IMG_9758 231 Brindled Pug
 IMG_7131 120 Roeslerstammia erxlebella
 IMG_9058 4 Chestnut
+IMG_9756 147 Twin-spotted Quaker
+IMG_9755 144 Diurnea fagella
+IMG_9754 144 Diurnea fagella
 IMG_6478 170 Catoptria falsella
+IMG_8929 240 Sallow
+IMG_9844 231 Brindled Pug
+IMG_8922 237 Lunar Underwing
+IMG_8920 94 Neglected Rustic
+IMG_8927 239 Grey Pine Carpet
+IMG_8925 238 Centre-barred Sallow
 IMG_4867 33 Early Thorn
 IMG_8378 213 Knot Grass
 IMG_8371 28 True Lovers Knot
@@ -247,7 +334,11 @@ IMG_6861 138 Dotted Chestnut
 IMG_5109 11 Sharp-angled Peacock
 IMG_7401 21 Elephant Hawk
 IMG_7403 57 Teleiodes luculella
+IMG_9839 232 Early Tooth-striped
 IMG_7406 115 Gold Spot
+IMG_0013 63 Epinotia immundana
+IMG_0012 247 228
+IMG_0015 248 Epinotia immundaba
 IMG_5213 79 Scalloped Oak
 IMG_5190 54 White-point
 IMG_6786 131 Pale Pinion
@@ -259,7 +350,16 @@ IMG_8651 209 Agriphila geniculea
 IMG_4863 35 Sallow Kitten
 IMG_8653 208 Rosy Rustic
 IMG_6360 186 Cinnabar
+IMG_9829 231 Brindled Pug
+IMG_8262 245 Aethes rubigana
+IMG_8264.170,Aethes rubigana"
+IMG_9821 147 Twin-spotted Quaker
+IMG_9820 231 Brindled Pug
 IMG_6441 177 Phycita roborella
+IMG_9825 234 Small Quaker
+IMG_9824 3 Hebrew Character
+IMG_9827 144 Diurnea fagella
+IMG_9826 206 Engrailed
 IMG_4913 22 Bordered Beauty
 IMG_6563 151 Agriphila latistria
 IMG_4916 20 Pine Hawk
@@ -269,11 +369,19 @@ IMG_5366 54 White-point
 IMG_5365 88 Old Lady
 IMG_0335 18 Hoary Footman
 IMG_0332 18 Hoary Footman
+IMG_9719 9 Common Quaker
 IMG_6282 11 Sharp-angled Peacock
 IMG_6287 195 Aleimma loeflingiana
+IMG_9914 7 Clouded Drab
+IMG_9917 142 Lunar Marbled Brown
+IMG_9911 230 Brindled Beauty
+IMG_9910 232 Early Tooth-striped
+IMG_8967 101 Diamond-back Moth
 IMG_0613 58 Peppered Moth
 IMG_0617 57 Teleiodes luculella
 IMG_0619 56 Treble Lines
+IMG_9802 0 Oak Beauty
+IMG_8968 101 Diamond-back Moth
 IMG_5141 51 Orthotelia sparganella
 IMG_8437 211 Gypsy Moth
 IMG_0780 54 White-point
@@ -299,6 +407,7 @@ IMG_6481 48 Anania coronata
 IMG_6527 165 Purple Thorn
 IMG_6520 166 Swallow-tailed Moth
 IMG_6523 37 Dingy Footman
+IMG_9797 5 March Moth
 IMG_5242 26 Common Wave
 IMG_7448 108 Crambus lathoniellus
 IMG_7445 108 Crambus lathoniellus
@@ -319,17 +428,26 @@ IMG_0878 50 Honeysuckle Moth
 IMG_6558 160 Dark Spectacle
 IMG_6412 184 Minor Shoulder-knot
 IMG_6415 183 Short-cloaked Moth
+IMG_9815 7 Clouded Drab
 IMG_6416 182 Double Square-spot
+IMG_9818 4 Chestnut
 IMG_6342 189 Currant Clearwing
 IMG_6555 161 Agriphila selasella
 IMG_5020 12 Blastobasis adustella
 IMG_6464 174 Large Wainscot
 IMG_9045 222 Yellow-line Quaker
 IMG_9044 223 Blairs Shoulder-knot
+IMG_9768 7 Clouded Drab
 IMG_4834 47 Single-dotted Wave
+IMG_9766 234 Small Quaker
+IMG_9762 9 Common Quaker
+IMG_9801 5 March Moth
+IMG_9805 144 Diurnea fagella
 IMG_0621 55 Mocha
+IMG_8915 236 Dusky Thorn
 IMG_5119 70 Caloptilia alchimiella/robustella
 IMG_5111 11 Sharp-angled Peacock
+IMG_9809 230 Brindled Beauty
 IMG_6873 33 Early Thorn
 IMG_8405 25 Common Carpet
 IMG_8407 215 Sharp-angled Carpet
@@ -341,6 +459,12 @@ IMG_7474 98 Lime Hawk f. brunnea
 IMG_7471 99 Silver-ground carpet
 IMG_7472 97 Pseudargyrotoza conwagana
 IMG_7478 97 Pseudargyrotoza conwagana
+IMG_0028 165 Purple Thorn
+IMG_0029 140 Red Chestnut
+IMG_0027 249 Grey Birch
+IMG_0024 4 Chestnut
+IMG_0025 132 Lesser Swallow Prominent
+IMG_0023 137 Great Prominent
 IMG_8318 209 Agriphila geniculea
 IMG_5278 25 Common Carpet
 IMG_4904 25 Common Carpet
@@ -356,7 +480,18 @@ IMG_6776 147 Twin-spotted Quaker
 IMG_6778 146 Shoulder Stripe
 IMG_4900 26 Common Wave
 IMG_4978 15 Ypsolopha sequella
+IMG_9796 144 Diurnea fagella
+IMG_9794 7 Clouded Drab
+IMG_9793 234 Small Quaker
+IMG_9792 233 Satellite
+IMG_9791 3 Hebrew Character
+IMG_9790 230 Brindled Beauty
+IMG_9995 139 Frosted Green
+IMG_9997 230 Brindled Beauty
+IMG_9993 42 Nut-tree Tussock
 IMG_6457 176 Chinese Character
+IMG_9999 9 Common Quaker
+IMG_9998 7 Clouded Drab
 IMG_4908 24 Tawny-barred Angle
 IMG_6514 11 Sharp-angled Peacock
 IMG_6515 11 Sharp-angled Peacock

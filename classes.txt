@@ -530,5 +530,8 @@ IMG_0607,235,"Grey Pine Carpet"
 IMG_0608,127,"Lime Hawk"
 IMG_0612,248,"Incurvaria oehlmanniella"
 IMG_0614,19,"Poplar Hawk"
+IMG_06171,103,"Carpatolechia proximella"
+IMG_06191,103,"Carpatolechia proximella"
+IMG_0622,129,"Chocolate-tip"
 
 

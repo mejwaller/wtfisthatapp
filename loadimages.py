@@ -3,7 +3,7 @@ import numpy as np
 import csv
 
 with open("./imglabels.txt") as imlabels:
-    reader=csv.reader(imlabels,delimiter=" ")
+    reader=csv.reader(imlabels,delimiter=",")
     for row in reader:
 	img=row[0]
 	index = row[1]

@@ -5,6 +5,7 @@ import csv
 with open("./imglabels.txt") as imlabels:
     reader=csv.reader(imlabels,delimiter=",")
     for row in reader:
+        #print row
 	img=row[0]
 	index = row[1]
 	label = row[2]

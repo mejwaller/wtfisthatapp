@@ -7,6 +7,7 @@ i=0
 with open("./classes.txt") as csvfile:
     reader=csv.reader(csvfile,delimiter=',',quotechar='"')
     for row in reader:
+        print row
         if len(row) > 0:
             #print row
             label=row[2]

@@ -1,4 +1,5 @@
 import csv
+from collections import OrderedDict
 
 labdict=dict()
 imdict=dict()
@@ -24,8 +25,16 @@ with open("./classes.txt") as csvfile:
                 i+=1
 csvfile.close()
 outfile = open("imglabels.txt","w")
-for things in imdict:
-    outfile.write(things + "," + str(imdict[things]) + "," + labdict.keys()[labdict.values().index(imdict[things])] + "\n")
+
+ordered = OrderedDict(sorted(imdict.items(), key=lambda t: t[1]))
+
+print ordered.values()
+
+
+for things in ordered:
+    outfile.write(str(ordered[things]) + "," + labdict.keys()[labdict.values().index(ordered[things])] + "," + things +"\n")
+#for things in imdict:
+    #outfile.write(things + "," + str(imdict[things]) + "," + labdict.keys()[labdict.values().index(imdict[things])] + "\n")
 outfile.close()
 
 

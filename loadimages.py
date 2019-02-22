@@ -20,9 +20,9 @@ with open("./imglabels.txt") as imlabels:
     reader=csv.reader(imlabels,delimiter=",")
     for row in reader:
         print row, i
-	img=row[0]
-	index = row[1]
-	label = row[2]
+	index=row[0]
+	label = row[1]
+	img = row[2]
 	img_path = "./normalizedpics/" + img + ".JPG"
 	im = Image.open(img_path)
 	imar = np.asarray(im)	

@@ -566,7 +566,7 @@ IMG_5511,259,"Small Dusty Wave"
 IMG_5514,22,"Bordered Beauty"
 IMG_5518,234,"Centre-barred Sallow"
 IMG_5519,93,"Neglected Rustic"
-IMG_5522,234,"Centre-bared Sallow"
+IMG_5522,234,"Centre-barred Sallow"
 IMG_5524,93,"Neglected Rustic"
 IMG_5526,216,"Acleris emargana"
 

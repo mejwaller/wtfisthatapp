@@ -569,5 +569,16 @@ IMG_5519,93,"Neglected Rustic"
 IMG_5522,234,"Centre-barred Sallow"
 IMG_5524,93,"Neglected Rustic"
 IMG_5526,216,"Acleris emargana"
+IMG_5531,206,"Rosy Rustic"
+IMG_5535,261,"Cochylis atricapitana"
+IMG_5537,76,"Oak Hook-tip"
+IMG_5542,235,"Grey Pine Carpet"
+IMG_5546,232,"Dusky Thorn"
+IMG_5560,236,"Sallow"
+IMG_5558,236,"Sallow"
+IMG_5562,262,"Small Rufous"
+IMG_5566,237,"Pink-barred Sallow"
+IMG_5569,263,"Lesser Treble-bar"
+
 
 

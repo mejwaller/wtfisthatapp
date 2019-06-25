@@ -611,5 +611,11 @@ IMG_5722,62,"Tachystola acroxantha"
 IMG_5725,222,"Barred Sallow"
 IMG_5731,80,"Caloptilia stigmatella"
 IMG_5735,149,"Spring Usher"
+IMG_5742,149,"Spring Usher"
+IMG_5744,74,"Small Mottled Willow"
+IMG_5749,10,"Common Quaker"
+IMG_5750,82,"Acleris notana/ferrugana"
+IMG_5755,218,"December Moth"
+IMG_5757,6,"Chestnut"
 
 

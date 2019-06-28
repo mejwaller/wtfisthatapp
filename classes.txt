@@ -617,5 +617,12 @@ IMG_5749,10,"Common Quaker"
 IMG_5750,82,"Acleris notana/ferrugana"
 IMG_5755,218,"December Moth"
 IMG_5757,6,"Chestnut"
+IMG_5770,6,"Chestnut"
+IMG_5767,149,"Spring Usher"
+IMG_5772,6,"Chestnut"
+IMG_5813,132,"Acleris literana"
+IMG_5818,3,"Small Brindled Beauty"
+IMG_5820,10,"Common Quaker"
+
 
 

@@ -78,15 +78,47 @@ testarray=np.asarray(testlist)
 print trainarray.shape
 print testarray.shape
 #todo - store arrays (pickle?)
-
-train = open('train.pkl','wb')
 test= open('test.pkl','wb')
 
-pickle.dump(trainarray,train)
 pickle.dump(testarray,test)
 
-train.close()
 test.close()
+
+print 'pickled test data.'
+
+remainder=0
+
+for i in range(1,((int)(trainarray.shape[0]/50 + 1))):
+    x = 'train' + str(i) + '.pkl'
+    print x
+    train=open(x,'wb')
+    startidx = (i-1)*50
+    endidx = startidx+49+1
+    print startidx,endidx
+    pickle.dump(trainarray[startidx:endidx,],train)
+    train.close()
+    
+    remainder=i
+
+    
+startidx=remainder*50
+
+x='train'+str(remiander+1)+'.pkl'
+print x
+
+train=open(x,'wb')
+
+print startidx,endidx
+
+pickle.dump(trainarray[startidx:,],train)
+
+train.close()
+
+print 'pickled training data.'
+
+
+
+
 
 
 

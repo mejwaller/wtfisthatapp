@@ -103,7 +103,7 @@ for i in range(1,((int)(trainarray.shape[0]/50 + 1))):
     
 startidx=remainder*50
 
-x='train'+str(remiander+1)+'.pkl'
+x='train'+str(remainder+1)+'.pkl'
 print x
 
 train=open(x,'wb')

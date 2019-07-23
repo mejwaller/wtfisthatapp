@@ -623,6 +623,22 @@ IMG_5772,6,"Chestnut"
 IMG_5813,132,"Acleris literana"
 IMG_5818,3,"Small Brindled Beauty"
 IMG_5820,10,"Common Quaker"
+IMG_5847,1,"Oak Beauty"
+IMG_5853,7,"Yellow Horned"
+IMG_5863,228,"Early Tooth-striped"
+IMG_5865,8,"Clouded Drab"
+IMG_5868,227,"Brindled Pug"
+IMG_5869,227,"Brindled Pug"
+IMG_5870,227,"Brindled Pug"
+IMG_5872,226,"Brindled Beauty"
+IMG_5874,204,"Engrailed"
+IMG_5876,269,"Blossom Underwing"
+IMG_5877,270,"Agonopterix alstromeriana"
+IMG_5885,139,"Red Chestnut"
+IMG_5889,147,"Early Grey"
+IMG_5890,8,"Clouded Drab"
+IMG_5897,137,"Dotted Chestnut"
+
 
 
 

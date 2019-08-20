@@ -6,8 +6,6 @@ from PIL import Image
 inpath="./dunpics/"
 outpath="./normalizedpics/"
 
-files=os.listdir(inpath)
-
 def resize(file):
     print file
     i=Image.open(inpath+file)
@@ -20,12 +18,16 @@ def resize(file):
     print "Saving " + file + " to " + outpath
     i.save(outpath+file)
 
-pool = mp.Pool(processes=8)
+if __name__ == '__main__':
 
-results = [pool.apply_async(resize, args=(f,)) for f in files]
-output = [p.get() for p in results]
+    files=os.listdir(inpath)
 
-print(output) 
+    pool = mp.Pool(processes=8)
+
+    results = [pool.apply_async(resize, args=(f,)) for f in files]
+    output = [p.get() for p in results]
+
+    print(output) 
 
 
 

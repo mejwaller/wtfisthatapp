@@ -654,7 +654,7 @@ IMG_5946,246,"Pale Tussock"
 IMG_5948,134,"Muslin Moth"
 IMG_5949,42,"Nut-tree Tussock"
 IMG_5980,140,"Powdered Quaker"
-IMG_5891,124,"White Ermine"
+IMG_5981,124,"White Ermine"
 IMG_5984,129,"Chocolate-tip"
 IMG_5986,85,"Angle Shades"
 

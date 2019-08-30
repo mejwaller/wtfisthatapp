@@ -72,7 +72,8 @@ with open("./imglabels.txt") as imlabels:
                 imar = np.asarray(im)
                 testlist.append(imar)
                 testindlist.append(index)
-
+            
+            #BUG: if curindex is the same as trainsize=50, then next image won;t get loaded as addottrain, etc., all get reset. So on that edge case we lose images. See what happends to brindled pug - 7th or 8th image doesn;t get added after 1st dataset pickled
             if(sizeoftrain==50):#pickle it, and then reset trainlist and trainindarray
                 #and what if we've reached the end but sizeoftrain != 50?
                 x = 'train' + str(pklnum) + '.pkl'

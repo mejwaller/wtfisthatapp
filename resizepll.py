@@ -27,7 +27,7 @@ if __name__ == '__main__':
     results = [pool.apply_async(resize, args=(f,)) for f in files]
     output = [p.get() for p in results]
 
-    print(output) 
+    #print(output) 
 
 
 

@@ -3,6 +3,7 @@ from collections import OrderedDict
 
 labdict=dict()
 imdict=dict()
+countdict=dict()
 i=0
 
 with open("./classes.txt") as csvfile:
@@ -28,11 +29,30 @@ outfile = open("imglabels.txt","w")
 
 ordered = OrderedDict(sorted(imdict.items(), key=lambda t: t[1]))
 
-print ordered.values()
+val=0
+count=0
 
+for value in ordered.values():
+    if value==val:
+        count+=1
+        print value, count
+    else:
+        val+=1
+        count=1
+        print value,count
+
+    countdict[value]=count
+
+print countdict
+    
+
+print ordered.values()
+print len(ordered.values())
 
 for things in ordered:
-    outfile.write(str(ordered[things]) + "," + labdict.keys()[labdict.values().index(ordered[things])] + "," + things +"\n")
+    if countdict[ordered[things]] > 5:#only want images with 6 or more examples to ensure we have enough for test set
+        #print countdict[ordered[things]]
+        outfile.write(str(ordered[things]) + "," + labdict.keys()[labdict.values().index(ordered[things])] + "," + things +"\n")
 #for things in imdict:
     #outfile.write(things + "," + str(imdict[things]) + "," + labdict.keys()[labdict.values().index(imdict[things])] + "\n")
 outfile.close()

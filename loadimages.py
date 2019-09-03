@@ -49,7 +49,7 @@ with open("./imglabels.txt") as imlabels:
         if index==curindex:#imglabels.txt is ordedered by index so this condition is true only if next row is same species
             numof=numof+1
             if numof<6: #enough to put 15% in trainign set
-                addtotrain=False
+                addtotrain=True
                 numfortrain=numfortrain+1
             else:
                 if numintest/numfortrain < 0.15:#if we already have more than 15% in test set, don't add more, keep them for training!
@@ -100,7 +100,7 @@ with open("./imglabels.txt") as imlabels:
             numfortrain=1
             numintest=0
             addtotest=False
-            addtotrain=False
+            addtotrain=True
 
     
         #print row, i, addtotrain, addtotest, sizeoftrain

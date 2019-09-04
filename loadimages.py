@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 import csv
 import numpy as np
-import pickle
+import cPickle as pickle
 
 #//load image from 'normalizedimages' dir and append into array
 #//add index to array of indices

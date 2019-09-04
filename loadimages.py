@@ -61,39 +61,6 @@ with open("./imglabels.txt") as imlabels:
                     addtotest=False;
                     numfortrain=numfortrain+1
 
-            if addtotrain:
-                im = Image.open(img_path)
-                imar = np.asarray(im)
-                trainlist.append(imar)
-                trainindlist.append(index)
-                sizeoftrain+=1
-            elif addtotest:#remember, test array will necve get massive, so no need to split
-                im = Image.open(img_path)
-                imar = np.asarray(im)
-                testlist.append(imar)
-                testindlist.append(index)
-
-	    print row, i, addtotrain, addtotest, sizeoftrain
-            
-            if(sizeoftrain==50):#pickle it, and then reset trainlist and trainindarray
-                #and what if we've reached the end but sizeoftrain != 50?
-                x = 'train' + str(pklnum) + '.pkl'
-                y = 'indexes' + str(pklnum) + '.pkl'
-                train=open(x,'wb')
-                indexes=open(y,'wb')
-                trainarray=np.asarray(trainlist)
-                trainindarray=np.asarray(trainindlist)
-                pickle.dump(trainarray,train)
-                pickle.dump(trainindarray,indexes)
-                train.close()
-                indexes.close()
-                print trainarray.shape
-                print trainindarray.shape
-                print "Pickled " + x + " and " + y
-                trainlist=[]
-                trainindlist=[]
-                sizeoftrain=0
-                pklnum+=1
         else:#new species
             curindex=index
             numof=1
@@ -101,6 +68,41 @@ with open("./imglabels.txt") as imlabels:
             numintest=0
             addtotest=False
             addtotrain=True
+
+        if addtotrain:
+            im = Image.open(img_path)
+            imar = np.asarray(im)
+            trainlist.append(imar)
+            trainindlist.append(index)
+            sizeoftrain+=1
+        elif addtotest:#remember, test array will necve get massive, so no need to split
+            im = Image.open(img_path)
+            imar = np.asarray(im)
+            testlist.append(imar)
+            testindlist.append(index)
+
+        print row, i, addtotrain, addtotest, sizeoftrain
+            
+        if(sizeoftrain==50):#pickle it, and then reset trainlist and trainindarray
+            #and what if we've reached the end but sizeoftrain != 50?
+            x = 'train' + str(pklnum) + '.pkl'
+            y = 'indexes' + str(pklnum) + '.pkl'
+            train=open(x,'wb')
+            indexes=open(y,'wb')
+            trainarray=np.asarray(trainlist)
+            trainindarray=np.asarray(trainindlist)
+            pickle.dump(trainarray,train)
+            pickle.dump(trainindarray,indexes)
+            train.close()
+            indexes.close()
+            print trainarray.shape
+            print trainindarray.shape
+            print "Pickled " + x + " and " + y
+            trainlist=[]
+            trainindlist=[]
+            sizeoftrain=0
+            pklnum+=1
+        
 
     
         #print row, i, addtotrain, addtotest, sizeoftrain

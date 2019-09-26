@@ -41,6 +41,9 @@ class NearestNeighbour(object):
 
 Xtr, Ytr, Xte, Yte = du.loadData()
 
+print Ytr
+print len(set(Ytr))
+
 print "Xtr shape: "
 print Xtr.shape
 print "Ytr shape: "
@@ -51,11 +54,18 @@ print "Yte shape: "
 print Yte.shape
 
 #flatten out all images to be one-dimensional
-Xtr_rows = Xtr.reshape(Xtr.shape[0],1935*2592*3)
-Xte_rows = Xte.reshape(Xte.shape[0],1935*2592*3)
+Xtr_rows, Xte_rows = du.flattenData(Xtr,Xte)
+
+print "Flattened Xtr shape:"
+print Xtr_rows.shape
+print "Flattened Xte shape:"
+print Xte_rows.shape
 
 nn = NearestNeighbour()
 nn.train(Xtr_rows, Ytr)
 Yte_predict = nn.predict(Xte_rows)
+
+print Yte_predict
+print Yte
 
 print 'accuracy: %f' % (np.mean(Yte_predict == Yte))

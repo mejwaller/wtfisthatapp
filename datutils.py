@@ -77,9 +77,10 @@ class datutils:
         plt.show()
 
     def subMeanImg(self,Xtr,Ytr):
-        mean = aself.getMeanImg(Xtr)
+        mean = self.getMeanImg(Xtr)
         Xtr -= mean
         Ytr -= mean
+        return Xtr, Ytr
 
 
 '''

@@ -48,6 +48,7 @@ class myTest(unittest.TestCase):
         self.failUnless(np.array_equal(Xexpected,Xsubmean))
         self.failUnless(np.array_equal(Yexpected,Ysubmean))
 
+'''
     def testaddBias(self):
         meanImg=np.asarray(self.du.getMeanImg(self.traindata))
         Xsubmean=self.traindata - meanImg
@@ -61,15 +62,12 @@ class myTest(unittest.TestCase):
         print np.ones((Xsubmean.shape[2],1))
         print np.ones((Ysubmean.shape[2],1))
 
-#        self.failUnless(1==1)
-
-
         Xtrain = np.hstack([Xsubmean,np.ones((Xsubmean.shape[2],1))])
         Ytrain = np.hastack([Ysubmean,np.ones((Ysubmean.shape[2],1))])
 
         print Xtrain
         print Ytrain
-
+'''
         
 
 

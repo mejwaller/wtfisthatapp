@@ -704,6 +704,24 @@ IMG_6154,282,"Grass Wave"
 IMG_6155,24,"Tawny-barred Angle"
 IMG_6156,283,"Blood-vein"
 IMG_6158,284,"Treble Brown-spot"
+IMG_6186,285,"Small Yellow Wave"
+IMG_6187,286,"Marbled White Spot"
+IMG_6190,272,"Notocelia cynosbatella"
+IMG_6196,107,"Crambus lathoniellus"
+IMG_6197,287,"Cypress Carpet"
+IMG_6202,288,"Pale Oak Beauty"
+IMG_6205,155,"Tinea semifulvella"
+IMG_6206,155,"Tinea semifulvella"
+IMG_6207,289,"Clouded Silver"
+IMG_6214,290,"Alder Kitten"
+IMG_6221,291,"Eudonia lacustrata"
+IMG_6229,292,"Eucosma cana"
+IMG_6231,292,"Eucosma cana"
+IMG_6235,291,"Eudonia lacustrata"
+IMG_6239,292,"Eudonia mercurella"
+IMG_6238,293,"Bee Moth"
+
+
 
 
 

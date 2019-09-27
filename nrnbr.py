@@ -1,9 +1,7 @@
-import datutils as du
+import datutils as dat
 import numpy as np
 
 class NearestNeighbour(object):
-    def __INIT__(self):
-        pass
 
     def train(self,X,y):
         """
@@ -39,6 +37,10 @@ class NearestNeighbour(object):
 
         return Ypred
 
+nn = NearestNeighbour()
+
+du = dat.datutils()
+
 Xtr, Ytr, Xte, Yte = du.loadData()
 
 print Ytr
@@ -61,7 +63,6 @@ print Xtr_rows.shape
 print "Flattened Xte shape:"
 print Xte_rows.shape
 
-nn = NearestNeighbour()
 nn.train(Xtr_rows, Ytr)
 Yte_predict = nn.predict(Xte_rows)
 

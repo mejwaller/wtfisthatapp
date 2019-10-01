@@ -55,6 +55,18 @@ print Xte.shape
 print "Yte shape: "
 print Yte.shape
 
+print "subtracting mean img..."
+
+du.showMeanImg(Xtr)
+
+Xtr=Xtr.astype('float64')
+Xte=Xte.astype('float64')
+
+Xtr, Xte = du.subMeanImg(Xtr,Xte)
+
+Xtr = Xtr.astype('uint8')
+Xte = Xte.astype('uint8')
+
 #flatten out all images to be one-dimensional
 Xtr_rows, Xte_rows = du.flattenData(Xtr,Xte)
 

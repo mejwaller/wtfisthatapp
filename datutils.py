@@ -63,9 +63,19 @@ class datutils:
 
         return Xtr_rows, Xte_rows
 
-    def biasTrick(self,X_tr,X_te):
+    def addBias(self,Xtr,Xte):
         #append ones to each column of the image data
-        pass
+        Xtrbias = np.ones((Xtr.shape[0],1))
+        Xtebias = np.ones((Xte.shape[0],1))
+
+        print Xtrbias
+        print Xtebias
+
+        Xtrstack = np.hstack((Xtr,Xtrbias))
+        Xtestack = np.hstack((Xte,Xtebias))
+
+        return Xtrstack, Xtestack
+        
 
     def getMeanImg(self,Xtr):
         meanImg = np.mean(Xtr, axis=0)
@@ -76,11 +86,11 @@ class datutils:
         plt.imshow(self.getMeanImg(Xtr).reshape((Xtr.shape[1],Xtr.shape[2],Xtr.shape[3])).astype('uint8')) # visualize the mean image
         plt.show()
 
-    def subMeanImg(self,Xtr,Ytr):
+    def subMeanImg(self,Xtr,Xte):
         mean = self.getMeanImg(Xtr)
         Xtr -= mean
-        Ytr -= mean
-        return Xtr, Ytr
+        Xte -= mean
+        return Xtr, Xte
 
 
 '''

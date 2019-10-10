@@ -38,6 +38,7 @@ with open("./imglabels.txt") as imlabels:
     numintest = 0
     sizeoftrain=0
     pklnum=1
+    j=-1
     for row in reader:
         addtotest=False        
         addtotrain=False
@@ -62,6 +63,7 @@ with open("./imglabels.txt") as imlabels:
                     numfortrain=numfortrain+1
 
         else:#new species
+            j+=1
             curindex=index
             numof=1
             numfortrain=1
@@ -81,7 +83,7 @@ with open("./imglabels.txt") as imlabels:
             testlist.append(imar)
             testindlist.append(index)
 
-        print row, i, addtotrain, addtotest, sizeoftrain
+        print row, i, j, addtotrain, addtotest, sizeoftrain
             
         if(sizeoftrain==50):#pickle it, and then reset trainlist and trainindarray
             #and what if we've reached the end but sizeoftrain != 50?
@@ -145,104 +147,3 @@ testinds.close()
 
 print "Pickled test.pkl and testinds.pkl"
 
-
-            
-
-
-
-
-
-
-'''
-        im = Image.open(img_path)
-	imar = np.asarray(im)	
-	#add the imagarry to the array holding the images...
-	#imgarray = np.append(imgarray,[imar],axis=0)
-        #set aside 15% as a test set - need enoough in train that a 15% test set can be extracted
-        #leaves question about how do we know how good it *really* is for where there's not enough i
-        #of a given speciesi in train to get a test set out?
-	if index==curindex:#imglabels.txt is ordedered by index so this condition is true only if next row is same species
-            numof=numof+1
-            print numof, numintest/numintrain
-            if numof<6: #not enough for 15% (1/6 ~ 1.7)
-                numintrain=numintrain+1
-            elif numintest/numintrain < 0.15:#if we already have more than 15% in test set, don;t add more, keep them for training!
-                addtotest=True
-                numintest=numintest+1
-            else:
-                addtotest=False
-                numintrain=numintrain+1
-	else:
-            #store 'numof' for previous index
-            curindex=index
-            numof=1
-            numintrain=1
-            numintest=0
-            addtotest=False
-            
-	print row, i, addtotest
-	
-	if addtotest:
-            testlist.append(imar)
-            testindarray.append(index)
-        else:
-            trainlist.append(imar)
-            trainindarray.append(index)
-	i+=1
-
-
-trainarray=np.asarray(trainlist)
-testarray=np.asarray(testlist)
-#shape is (number of images) x 1935 (height) x 2592 (width) x 3 (RGB)
-print trainarray.shape
-print testarray.shape
-#todo - store arrays (pickle?)
-test= open('test.pkl','wb')
-
-pickle.dump(testarray,test)
-
-test.close()
-
-print 'pickled test data.'
-
-remainder=0
-
-for i in range(1,((int)(trainarray.shape[0]/50 + 1))):
-    x = 'train' + str(i) + '.pkl'
-    print x
-    train=open(x,'wb')
-    startidx = (i-1)*50
-    endidx = startidx+49+1
-    print startidx,endidx
-    pickle.dump(trainarray[startidx:endidx,],train)
-    train.close()
-    
-    remainder=i
-
-    
-startidx=remainder*50
-
-x='train'+str(remainder+1)+'.pkl'
-print x
-
-train=open(x,'wb')
-
-print startidx,endidx
-
-pickle.dump(trainarray[startidx:,],train)
-
-train.close()
-
-print 'pickled training data.'
-
-'''
-
-
-
-
-
-
-
-
-
-  

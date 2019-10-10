@@ -35,24 +35,36 @@ count=0
 for value in ordered.values():
     if value==val:
         count+=1
-        print value, count
+        #print value, count
     else:
         val+=1
         count=1
-        print value,count
+        #print value,count
 
     countdict[value]=count
 
 print countdict
     
 
-print ordered.values()
-print len(ordered.values())
-
+#print ordered.values()
+#print len(ordered.values())
+curchanged=False
+cur=-1
+i=-1
 for things in ordered:
+    if ordered[things] != cur:
+        curchanged=True
+    else:
+        curchanged=False
     if countdict[ordered[things]] > 5:#only want images with 6 or more examples to ensure we have enough for test set
         #print countdict[ordered[things]]
-        outfile.write(str(ordered[things]) + "," + labdict.keys()[labdict.values().index(ordered[things])] + "," + things +"\n")
+        cur = ordered[things]
+        #outfile.write(str(ordered[things]) + "," + labdict.keys()[labdict.values().index(ordered[things])] + "," + things +"\n")
+        if curchanged==True:
+            i+=1
+        outfile.write(str(i) + "," + labdict.keys()[labdict.values().index(ordered[things])] + "," + things +"\n")
+
+        
 #for things in imdict:
     #outfile.write(things + "," + str(imdict[things]) + "," + labdict.keys()[labdict.values().index(imdict[things])] + "\n")
 outfile.close()

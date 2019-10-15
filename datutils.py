@@ -68,8 +68,8 @@ class datutils:
         Xtrbias = np.ones((Xtr.shape[0],1))
         Xtebias = np.ones((Xte.shape[0],1))
 
-        print Xtrbias
-        print Xtebias
+        #print Xtrbias
+        #print Xtebias
 
         Xtrstack = np.hstack((Xtr,Xtrbias))
         Xtestack = np.hstack((Xte,Xtebias))

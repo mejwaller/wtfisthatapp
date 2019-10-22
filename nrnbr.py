@@ -66,7 +66,6 @@ Xtr, Xte = du.subMeanImg(Xtr,Xte)
 
 Xtr = Xtr.astype('uint8')
 Xte = Xte.astype('uint8')
-i
 
 print "Flattening data..."
 #flatten out all images to be one-dimensional

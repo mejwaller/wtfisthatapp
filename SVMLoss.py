@@ -32,7 +32,7 @@ class SVMLoss(object):
      
     def score(self,W,Xtr_rows):
         #print W.shape
-        scores = W.dot(Xtr_rows.transpose())
+        scores = Xtr_rows.dot(W)
         return scores
 
     def L_i(self,x, y, W):
@@ -46,7 +46,7 @@ class SVMLoss(object):
         delta = 1.0
         scores = self.score(W,x)
         correct_class_score = scores[y.astype('uint8')]
-        D=W.shape[0]
+        D=W.shape[1]
         loss_i = 0
 
         for j in xrange(D):
@@ -55,6 +55,25 @@ class SVMLoss(object):
             #accumulate loss for ith example
             loss_i+= max(0,scores[j] - correct_class_score + delta)
         return loss_i
+
+    def SVM_loss(self,X,y,W,reg=1.):
+        """
+        fully-vectorized implementation :
+        - X holds all the training examples as columns (e.g. 50,000  x 3073 in CIFAR-10)
+        - y is array of integers specifying correct class (e.g. 50,000-D array)
+        - W are weights (e.g. 3073 x 10)
+        """
+        scores = self.score(W,x)
+        correct_class_score = scores[np.arange(X.shape[0]),y]
+        margins = np.maximum(0,scores - correct_class_score[:, np.newaxis])
+        margins[np.arange(X.shape[0]),y]=0
+        loss/=X.shape[0]
+        loss += self.regL2norm(W,reg)
+        return loss
+
+    def regL2norm(self,W,reg):
+        #see http://cs231n.github.io/neural-networks-2/ for the reason for the 0.5...
+        return 0.5*reg*np.sum(W*W)
 
 
 

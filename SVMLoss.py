@@ -21,13 +21,13 @@ class SVMLoss(object):
         self.Xtr_rows, self.Xte_rows = self.du.addBias(self.Xtr_rows,self.Xte_rows)
 
     def initScores(self,Ytr,Xtr_rows):
-        print Ytr
+        #print Ytr
         num_classes = len(set(Ytr))
         vec_length = Xtr_rows.shape[1]        
-        print num_classes
-        print vec_length
+        #print num_classes
+        #print vec_length
         W = np.random.randn(num_classes,vec_length)*1e-5
-        print W.shape
+        #print W.shape
         return W
      
     def score(self,W,Xtr_rows):
@@ -56,18 +56,24 @@ class SVMLoss(object):
             loss_i+= max(0,scores[j] - correct_class_score + delta)
         return loss_i
 
-    def SVM_loss(self,X,y,W,reg=1.):
+    def SVM_loss(self,X,y,W,reg=1.,delta=1.):
         """
         fully-vectorized implementation :
         - X holds all the training examples as columns (e.g. 50,000  x 3073 in CIFAR-10)
         - y is array of integers specifying correct class (e.g. 50,000-D array)
         - W are weights (e.g. 3073 x 10)
         """
-        scores = self.score(W,x)
-        correct_class_score = scores[np.arange(X.shape[0]),y]
-        margins = np.maximum(0,scores - correct_class_score[:, np.newaxis])
-        margins[np.arange(X.shape[0]),y]=0
+        loss=0.
+        #print "X.shape[0] is %d" % X.shape[0]
+        scores = self.score(W,X)
+        correct_class_score = scores[np.arange(X.shape[0]),y.astype('uint8')]
+        margins = np.maximum(0,scores - correct_class_score[:, np.newaxis]+delta)
+        margins[np.arange(X.shape[0]),y.astype('uint8')]=0
+        loss = np.sum(margins)
+        #print "Raw loss is %f" % loss
         loss/=X.shape[0]
+        #print "average loss is %f" % loss
+        #print "regL2norm is %f" % self.regL2norm(W,reg)
         loss += self.regL2norm(W,reg)
         return loss
 

@@ -6,12 +6,17 @@ from PIL import Image
 inpath="./dunpics/"
 outpath="./normalizedpics/"
 
+#x=2592
+#y=1935
+x=1000
+y=750
+
 def resize(file):
     print file
     i=Image.open(inpath+file)
-    if i.size != (2592,1935):
+    if i.size != (x,y):
         print "resizing"
-        i = i.resize((2592,1935))
+        i = i.resize((x,y))
     else:
         print "Not resizing"
 

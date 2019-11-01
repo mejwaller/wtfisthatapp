@@ -81,6 +81,37 @@ class SVMLoss(object):
         #see http://cs231n.github.io/neural-networks-2/ for the reason for the 0.5...
         return 0.5*reg*np.sum(W*W)
 
+    def eval_numerical_gradient(self,f,x, h=0.00001):
+        
+        grad = np.zeros(x.shape)
+
+        it = np.nditer(x, flags=['multi_index'], op_flags=['readwrite'])
+
+        while not it.finished:
+            ix = it.multi_index
+            old_value = x[ix]
+            x[ix] = old_value + h
+            fxplush = f(x)
+            x[ix] = old_value
+
+            xi = it.multi_index
+            old_value = x[xi]
+            x[xi] = old_value - h
+            fxminush = f(x)
+            x[xi] = old_value
+
+            grad[ix] = (fxplush-fxminush)/(2*h)
+
+            it.iternext()
+
+        return grad
+
+    def unaryLoss(self,W):
+        return self.SVM_loss(self.Xtr_rows,self.Ytr,W)
+
+
+
+
 
 
 

@@ -15,6 +15,7 @@ print W.shape
 
 loss=0.
 
+'''
 print "Loss unvectorized version:"
 tic=time.time()
 #print "X.shape[0] is %d" % svm.Xtr_rows.shape[0]
@@ -32,7 +33,7 @@ toc=time.time()
 print "Total loss:"
 print loss
 print "and it took %fs to run" % (toc-tic)
-
+'''
 
 print "Loss vectorized version:"
 loss=0.
@@ -44,3 +45,13 @@ toc=time.time()
 print "Total loss:"
 print loss
 print "and it took %fs to run" % (toc-tic)
+
+'''
+print "Calculating gradient..."
+tic=time.time()
+df = svm.eval_numerical_gradient(svm.unaryLoss,W)
+toc = time.time()
+
+print "Gradient is is: %f" % df
+print "and it took %fs..." % (toc-tic)
+'''

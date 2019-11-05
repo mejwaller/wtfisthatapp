@@ -12,7 +12,7 @@ with open("./classes.txt") as csvfile:
         print row
         if len(row) > 0:
             #print row
-            label=row[2]
+            label=row[1]
             imref=row[0]
             if label in labdict:
                 print "Found label " + label

@@ -77,6 +77,24 @@ class SVMLoss(object):
         loss += self.regL2norm(W,reg)
         return loss
 
+        #code for vectorized calc of dW:
+        '''
+        binary = margins
+        binary[margins > 0] = 1
+        row_sum = np.sum(binary, axis=1)
+        binary[np.arange(num_train), y] = -row_sum.T
+        dW = np.dot(X.T, binary)
+
+        # Average
+        dW /= X.shape[0]
+
+        # Regularize
+        dW += reg*W
+
+        return loss, dW
+
+
+
     def regL2norm(self,W,reg):
         #see http://cs231n.github.io/neural-networks-2/ for the reason for the 0.5...
         return 0.5*reg*np.sum(W*W)

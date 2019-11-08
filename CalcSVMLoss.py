@@ -48,7 +48,9 @@ scores = svm.score(W,svm.Xtr_rows)
 
 orig_loss = 1e+9
 
-while abs(delta) > 1:    
+train_acc = 0.
+
+while ((abs(delta) > 1) and (train_acc < .999)):    
 
     loss, grad, scores = svm.SVM_loss(svm.Xtr_rows,svm.Ytr,W,reg)
 
@@ -58,7 +60,10 @@ while abs(delta) > 1:
     #print "and it took %fs to run" % (toc-tic)
 
     predicted_class = np.argmax(scores, axis=1)    
-    print "Trainign accurcay: %f" % (np.mean(predicted_class == svm.Ytr.astype('int64')))
+    train_acc=(np.mean(predicted_class == svm.Ytr.astype('int64')))
+
+    print "delta: %f" % abs(delta)
+    print "Training accurcay: %f" % train_acc
 
     delta = orig_loss-loss
 

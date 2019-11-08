@@ -75,14 +75,12 @@ class SVMLoss(object):
         #print "average loss is %f" % loss
         #print "regL2norm is %f" % self.regL2norm(W,reg)
         loss += self.regL2norm(W,reg)
-        return loss
 
         #code for vectorized calc of dW:
-        '''
         binary = margins
         binary[margins > 0] = 1
         row_sum = np.sum(binary, axis=1)
-        binary[np.arange(num_train), y] = -row_sum.T
+        binary[np.arange(X.shape[0]), y.astype('uint8')] = -row_sum.T
         dW = np.dot(X.T, binary)
 
         # Average
@@ -91,8 +89,7 @@ class SVMLoss(object):
         # Regularize
         dW += reg*W
 
-        return loss, dW
-
+        return loss, dW, scores
 
 
     def regL2norm(self,W,reg):

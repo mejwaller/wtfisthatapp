@@ -39,18 +39,17 @@ print "and it took %fs to run" % (toc-tic)
 print "Loss vectorized version:"
 loss=0.
 #tic = time.time()
-step_size=2
+step_size=4
 reg=1e-3
 
 delta=1e+9
-
-scores = svm.score(W,svm.Xtr_rows)
 
 orig_loss = 1e+9
 
 train_acc = 0.
 
-while ((abs(delta) > 1) and (train_acc < .999)):    
+#while ((abs(delta) > 1) and (train_acc < .999)):    
+while abs(delta) > 1:
 
     loss, grad, scores = svm.SVM_loss(svm.Xtr_rows,svm.Ytr,W,reg)
 
@@ -67,13 +66,20 @@ while ((abs(delta) > 1) and (train_acc < .999)):
 
     delta = orig_loss-loss
 
+    orig_loss = loss
+
     W+=-step_size*grad
 
 print "Predicted:"
 print np.argmax(scores, axis=1)
 print "Actual:"
 print svm.Ytr.astype('int64')
+print W
 
+params = "W.pkl"
+out = open(params,'wb')
+pickel.dump(W,out)
+out.close()
 
 '''
 print "Calculating gradient..."

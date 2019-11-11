@@ -78,7 +78,7 @@ print W
 
 params = "W.pkl"
 out = open(params,'wb')
-pickel.dump(W,out)
+pickle.dump(W,out)
 out.close()
 
 '''

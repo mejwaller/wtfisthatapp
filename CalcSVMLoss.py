@@ -40,7 +40,7 @@ print "and it took %fs to run" % (toc-tic)
 print "Loss vectorized version:"
 loss=0.
 #tic = time.time()
-step_size=4
+step_size=10
 reg=1e-3
 
 delta=1e+9
@@ -76,6 +76,21 @@ print np.argmax(scores, axis=1)
 print "Actual:"
 print svm.Ytr.astype('int64')
 print W
+
+print "Test data"
+
+loss, grad, scores = svm.SVM_loss(svm.Xte_rows,svm.Yte,W,reg)
+
+print "Test predicted:"
+print np.argmax(scores, axis=1)
+print "Test Actual:"
+print svm.Yte.astype('int64')
+
+print "Accuracy on test set: "
+predicted_class = np.argmax(scores, axis=1)    
+test_acc=(np.mean(predicted_class == svm.Yte.astype('int64')))
+print test_acc
+
 
 params = "W.pkl"
 out = open(params,'wb')

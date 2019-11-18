@@ -2,6 +2,7 @@ import SVMLoss
 import time
 import numpy as np
 import pickle
+import matplotlib.pyplot as plt
 
 svm = SVMLoss.SVMLoss()
 
@@ -40,7 +41,7 @@ print "and it took %fs to run" % (toc-tic)
 print "Loss vectorized version:"
 loss=0.
 #tic = time.time()
-step_size=10
+step_size=100
 reg=1e-3
 
 delta=1e+9
@@ -48,11 +49,36 @@ delta=1e+9
 orig_loss = 1e+9
 
 train_acc = 0.
+#for dynamic plotting - see e.g. https://stackoverflow.com/questions/10944621/dynamically-updating-plot-in-matplotlib
 
+plt.ion()
+
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
+ax.set_autoscaley_on(True)
+ax.set_autoscalex_on(True)
+ax.set_yscale('log')
+ax.yaxis.set_label_text('log(loss)')
+ax.xaxis.set_label_text('epoch')
+
+i=0;
 #while ((abs(delta) > 1) and (train_acc < .999)):    
-while abs(delta) > 1:
+while abs(delta) > 1e-3:
+
+    i+=1
 
     loss, grad, scores = svm.SVM_loss(svm.Xtr_rows,svm.Ytr,W,reg)
+
+#    plt.plot(loss)
+#    plt.pause(0.1)
+#    plt.show()
+    ax.plot(i,loss,'o')
+     #Need both of these in order to rescale
+    ax.relim()
+    ax.autoscale_view()
+    fig.canvas.draw()
+    fig.canvas.flush_events()
+
 
     #toc=time.time()
     print "Total loss:"

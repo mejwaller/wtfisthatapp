@@ -2,6 +2,7 @@ import cPickle as pickle
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+import random
 
 class datutils:
 
@@ -52,7 +53,21 @@ class datutils:
     
         Y_te = np.array(Y_te)
 
+        print "We have %d training examples" % X_tr.shape[0]
+        print "and there are %d test examples" % X_te.shape[0]
+
+        X_tr, Y_tr = self.shuffleTrain(X_tr,Y_tr)
+
         return X_tr, Y_tr, X_te, Y_te
+
+    def shuffleTrain(self, Xtr, Ytr):
+
+        inds = random.sample(range(0,Xtr.shape[0]),Xtr.shape[0])
+        shuffledX = Xtr[inds]
+        shuffledY = Ytr[inds]
+
+        return shuffledX, shuffledY
+
 
     def flattenData(self,Xtr,Xte):
         #flatten out all images to be one-dimensional

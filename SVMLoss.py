@@ -20,18 +20,33 @@ class SVMLoss(object):
         print "Adding bias"
         self.Xtr_rows, self.Xte_rows = self.du.addBias(self.Xtr_rows,self.Xte_rows)
 
+    def setData(self,Xtr,Ytr,Xval,Yval,Xte,Yte):
+
+        self.du = dat.datutils()
+
+        self.Xtr = Xtr.astype('float64')
+        self.Ytr = Ytr
+        self.Xval = Xval.astype('float64')
+        self.Yval = Yval
+        self.Xte = Xte.astype('float64')
+        self.Yte = Yte
+        
+        print "Calculating and subtracting mean img"
+        self.Xtr,self.Xte, self.Xval = self.du.subMeanImg(self.Xtr,self.Xte, self.Xval)
+
+        print "Flatteining data"
+        self.Xtr_rows, self.Xte_rows, self.Xval_rows = self.du.flattenData(self.Xtr,self.Xte, self.Xval)
+
+        print "Adding bias"
+        self.Xtr_rows, self.Xte_rows, self.Xval_rows = self.du.addBias(self.Xtr_rows,self.Xte_rows, self.Xval_rows)    
+
     def initScores(self,Ytr,Xtr_rows):
-        #print Ytr
         num_classes = len(set(Ytr))
         vec_length = Xtr_rows.shape[1]        
-        #print num_classes
-        #print vec_length
         W = np.random.randn(num_classes,vec_length)*1e-5
-        #print W.shape
         return W
      
     def score(self,W,Xtr_rows):
-        #print W.shape
         scores = Xtr_rows.dot(W)
         return scores
 

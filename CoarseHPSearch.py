@@ -1,5 +1,7 @@
 import datutils as dat
 import random
+import SVMLoss
+import numpy as np
 
 #hyperparameters: reg, step size
 #use 4 epochs for corase search!
@@ -10,11 +12,25 @@ du = dat.datutils()
 
 Xtr,Ytr,Xte,Yte = du.loadData()
 
+svm = SVMLoss.SVMLoss()
+
 f = open("hyperdsearch.txt","w")
 
 #iterate over cross validation folds...
 for z in range(0,5):
-    Xtrain, Ytrain, Xval, Yval = du.getTrainVal(Xtr,Ytr,z)
+    Xtr, Ytr, Xval, Yval = du.getTrainVal(Xtr,Ytr,z)
+    
+    svm.setData(Xtr,Ytr,Xval,Yval,Xte,Yte)
+
+    W = svm.initScores(svm.Ytr,svm.Xtr_rows)
+
+    print "transposing W - current shape is:"
+    print W.shape
+    W = W.transpose()
+    print "W transposed shape:"
+    print W.shape
+
+    loss=0.
 
     #use 9 randomized values of each hyperpara,eter (there are two - step_size and reg strength)
     for a in range(0,9):
@@ -30,6 +46,8 @@ for z in range(0,5):
 
             print "Reg strength: %f" % reg
             f.write("Reg strength: %f\n" % reg)
+
+
 
 f.close()
 

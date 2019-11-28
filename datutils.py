@@ -105,6 +105,8 @@ class datutils:
         Yval = np.array(Yfolds[valFold])
 
         for i in range(0,5):
+            #print "Xfold %d shape is:" % i
+            #print Xfolds[i].shape
             if i!=valFold:
                 #print "i!=valFold:"
                 #print "Before append, XTrai shape is:"

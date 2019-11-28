@@ -4,39 +4,45 @@ import SVMLoss
 import numpy as np
 
 #hyperparameters: reg, step size
-#use 4 epochs for corase search!
+#use 5 epochs for corase search!
 
 #9 examples of each, randomized
 
 du = dat.datutils()
 
-Xtr,Ytr,Xte,Yte = du.loadData()
+Xtr_base,Ytr_base,Xte_base,Yte_base = du.loadData()
 
 svm = SVMLoss.SVMLoss()
 
 f = open("hyperdsearch.txt","w")
 
-#iterate over cross validation folds...
-for z in range(0,5):
-    Xtr, Ytr, Xval, Yval = du.getTrainVal(Xtr,Ytr,z)
+f.write("validation fold,step_size,reg,loss,train_acc,val_acc\n")
+
+
+#use 9 randomized values of each hyperpara,eter (there are two - step_size and reg strength)
+for a in range(0,9):
+    step_size = 10 ** random.uniform(-3,3)
+    for b in range(0,9):            
+        reg = 10 ** random.uniform(-6,1)
+
+        #iterate over cross validation folds...
+        for z in range(0,5):
+            Xtr, Ytr, Xval, Yval = du.getTrainVal(Xtr_base,Ytr_base,z)
     
-    svm.setData(Xtr,Ytr,Xval,Yval,Xte,Yte)
+            svm.setData(Xtr,Ytr,Xval,Yval,Xte_base,Yte_base)
 
-    W = svm.initScores(svm.Ytr,svm.Xtr_rows)
+            W = svm.initScores(svm.Ytr,svm.Xtr_rows)
 
-    print "transposing W - current shape is:"
-    print W.shape
-    W = W.transpose()
-    print "W transposed shape:"
-    print W.shape
+            print a
+            print b
 
-    loss=0.
+            #print "transposing W - current shape is:"
+            #print W.shape
+            W = W.transpose()
+            #print "W transposed shape:"
+            #print W.shape
 
-    #use 9 randomized values of each hyperpara,eter (there are two - step_size and reg strength)
-    for a in range(0,9):
-        step_size = 10 ** random.uniform(-3,3)
-        for b in range(0,9):            
-            reg = 10 ** random.uniform(-6,1)
+            loss=0.
 
             print "validation fold: %d" % z
             f.write("validation fold: %d\n" % z)
@@ -47,6 +53,45 @@ for z in range(0,5):
             print "Reg strength: %f" % reg
             f.write("Reg strength: %f\n" % reg)
 
+            fname = str(z)+"_"+str(a) + "_"+str(b)+".csv"
+
+            f2 = open(fname,"w")
+
+            f2.write("epoch,step_size,reg,loss,train_acc,val_acc\n")
+
+            for epoch in range(0,5):
+
+                print "Epoch %d" % epoch
+
+                loss,grad,scores = svm.SVM_loss(svm.Xtr_rows,svm.Ytr,W,reg)
+    
+                predicted_class = np.argmax(scores,axis=1)
+                train_acc = (np.mean(predicted_class == svm.Ytr.astype('int64')))                
+    
+                #print "Training accurcay after epoch %d is %f" % (epoch,train_acc)
+
+                #print "and loss is %f" % loss
+
+                W+=step_size*grad
+
+                #validation accuracy
+
+                valloss, valgrad, valscores = svm.SVM_loss(svm.Xval_rows,svm.Yval,W,reg)
+
+                predicted_class = np.argmax(valscores,axis=1)
+                val_acc = np.mean(predicted_class == svm.Yval.astype('int64'))
+
+                #print " and validation accurcay is %f" % val_acc
+
+                f2str = str(epoch) + "," + str(step_size)+"," + str(reg) + "," + str(loss) + "," + str(train_acc) + "," + str(val_acc) + "\n"
+
+                f2.write(f2str)
+
+            fstr = str(z) + "," + str(step_size) + "," + str(reg) + "," + str(loss) + "," + str(train_acc) + "," + str(val_acc) + "\n"
+
+            f.write(fstr)
+
+            f2.close()
 
 
 f.close()

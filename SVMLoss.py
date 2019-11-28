@@ -81,6 +81,11 @@ class SVMLoss(object):
         loss=0.
         #print "X.shape[0] is %d" % X.shape[0]
         scores = self.score(W,X)
+        #print "scores shape:"
+        #print scores.shape
+        #print "np.arange:"
+        #print np.arange(X.shape[0]),y.astype('uint8')
+
         correct_class_score = scores[np.arange(X.shape[0]),y.astype('uint8')]
         margins = np.maximum(0,scores - correct_class_score[:, np.newaxis]+delta)
         margins[np.arange(X.shape[0]),y.astype('uint8')]=0

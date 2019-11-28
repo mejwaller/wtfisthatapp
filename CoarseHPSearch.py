@@ -44,14 +44,11 @@ for a in range(0,9):
 
             loss=0.
 
-            print "validation fold: %d" % z
-            f.write("validation fold: %d\n" % z)
+            print "validation fold: %d" % z            
 
             print "Step size: %f" % step_size
-            f.write("Step size: %f\n" % step_size)
 
             print "Reg strength: %f" % reg
-            f.write("Reg strength: %f\n" % reg)
 
             fname = str(a)+"_"+str(b) + "_"+str(z)+".csv"
 

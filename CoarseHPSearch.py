@@ -53,7 +53,7 @@ for a in range(0,9):
             print "Reg strength: %f" % reg
             f.write("Reg strength: %f\n" % reg)
 
-            fname = str(z)+"_"+str(a) + "_"+str(b)+".csv"
+            fname = str(a)+"_"+str(b) + "_"+str(z)+".csv"
 
             f2 = open(fname,"w")
 

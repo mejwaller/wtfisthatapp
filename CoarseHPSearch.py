@@ -25,7 +25,7 @@ del Xtr_base
 del Ytr_base
 
 
-f = open("hyperdsearch.txt","w")
+f = open("hyperdsearch.csv","w")
 
 f.write("validation fold,step_size,reg,loss,train_acc,val_acc\n")
 
@@ -100,6 +100,8 @@ for a in range(0,9):
             f.write(fstr)
 
             f2.close()
+
+
 
 
 f.close()

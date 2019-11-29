@@ -79,30 +79,27 @@ class datutils:
         #5 folds
         offset = Xtr.shape[0]//5
 
-        Xfolds = [[]]
-        Yfolds = [[]]
+        self.Xfolds = [[]]
+        self.Yfolds = [[]]
 
-        Xfolds[0] = Xtr[0:offset]
-        Xfolds.append(Xtr[offset:2*offset])
-        Xfolds.append(Xtr[2*offset:3*offset])
-        Xfolds.append(Xtr[3*offset:4*offset])
-        Xfolds.append(Xtr[4*offset:])
+        self.Xfolds[0] = Xtr[0:offset]
+        self.Xfolds.append(Xtr[offset:2*offset])
+        self.Xfolds.append(Xtr[2*offset:3*offset])
+        self.Xfolds.append(Xtr[3*offset:4*offset])
+        self.Xfolds.append(Xtr[4*offset:])
 
-        Yfolds[0] = Ytr[0:offset]
-        Yfolds.append(Ytr[offset:2*offset])
-        Yfolds.append(Ytr[2*offset:3*offset])
-        Yfolds.append(Ytr[3*offset:4*offset])
-        Yfolds.append(Ytr[4*offset:])
-
-        return Xfolds, Yfolds
+        self.Yfolds[0] = Ytr[0:offset]
+        self.Yfolds.append(Ytr[offset:2*offset])
+        self.Yfolds.append(Ytr[2*offset:3*offset])
+        self.Yfolds.append(Ytr[3*offset:4*offset])
+        self.Yfolds.append(Ytr[4*offset:])
 
     #get traininf ddata composed of all folds except valFold whic we use for the validation set
-    def getTrainVal(self,Xtr,Ytr,valFold):
-        Xfolds,Yfolds = self.genXvalFolds(Xtr,Ytr)
-        Xtrain=np.empty((0,Xfolds[0].shape[1],Xfolds[0].shape[2],Xfolds[0].shape[3]))
+    def getTrainVal(self,valFold):        
+        Xtrain=np.empty((0,self.Xfolds[0].shape[1],self.Xfolds[0].shape[2],self.Xfolds[0].shape[3]))
         Ytrain=np.array([])
-        Xval = np.array(Xfolds[valFold])
-        Yval = np.array(Yfolds[valFold])
+        Xval = np.array(self.Xfolds[valFold])
+        Yval = np.array(self.Yfolds[valFold])
 
         for i in range(0,5):
             #print "Xfold %d shape is:" % i
@@ -111,8 +108,8 @@ class datutils:
                 #print "i!=valFold:"
                 #print "Before append, XTrai shape is:"
                 #print Xtrain.shape
-                Xtrain = np.append(Xtrain,np.array(Xfolds[i]),axis=0)
-                Ytrain = np.append(Ytrain,np.array(Yfolds[i]),axis=0)
+                Xtrain = np.append(Xtrain,np.array(self.Xfolds[i]),axis=0)
+                Ytrain = np.append(Ytrain,np.array(self.Yfolds[i]),axis=0)
                 #print "After append, Xtrain shape is:"
                 #print Xtrain.shape
                 

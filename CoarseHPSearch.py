@@ -14,10 +14,20 @@ Xtr_base,Ytr_base,Xte_base,Yte_base = du.loadData()
 
 svm = SVMLoss.SVMLoss()
 
+print "Generating validation folds"
+
+du.genXvalFolds(Xtr_base,Ytr_base)
+
+Xtr_base=[]
+Ytr_base=[]
+
+del Xtr_base
+del Ytr_base
+
+
 f = open("hyperdsearch.txt","w")
 
 f.write("validation fold,step_size,reg,loss,train_acc,val_acc\n")
-
 
 #use 9 randomized values of each hyperpara,eter (there are two - step_size and reg strength)
 for a in range(0,9):
@@ -27,7 +37,8 @@ for a in range(0,9):
 
         #iterate over cross validation folds...
         for z in range(0,5):
-            Xtr, Ytr, Xval, Yval = du.getTrainVal(Xtr_base,Ytr_base,z)
+
+            Xtr,Ytr,Xval,Yval = du.getTrainVal(z)
     
             svm.setData(Xtr,Ytr,Xval,Yval,Xte_base,Yte_base)
 

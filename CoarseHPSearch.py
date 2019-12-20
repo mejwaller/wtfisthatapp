@@ -24,7 +24,6 @@ Ytr_base=[]
 del Xtr_base
 del Ytr_base
 
-
 f = open("hypersearch.csv","w")
 
 f.write("step_num,reg_num,validation fold,step_size,reg,loss,train_acc,val_acc\n")
@@ -100,6 +99,8 @@ for a in range(0,9):
             f.write(fstr)
 
             f2.close()
+
+
 
 
 f.close()

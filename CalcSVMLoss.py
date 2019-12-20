@@ -3,10 +3,23 @@ import time
 import numpy as np
 import pickle
 import matplotlib.pyplot as plt
+import random
+import datutils as dat
+
+du = dat.datutils()
+
+Xtr_base,Ytr_base,Xte_base,Yte_base = du.loadData()
 
 svm = SVMLoss.SVMLoss()
 
-svm.loadData()
+du.genXvalFolds(Xtr_base,Ytr_base)
+
+Xtr_base=[]
+Ytr_base=[]
+
+Xtr,Ytr,Xval,Yval = du.getTrainVal(0)#use 1st validation fld as validation set
+
+svm.setData(Xtr,Ytr,Xval,Yval,Xte_base,Yte_base) 
 
 W = svm.initScores(svm.Ytr,svm.Xtr_rows)
 
@@ -48,6 +61,8 @@ delta=1e+9
 
 orig_loss = 1e+9
 
+epsilon = 1e-3
+
 train_acc = 0.
 #for dynamic plotting - see e.g. https://stackoverflow.com/questions/10944621/dynamically-updating-plot-in-matplotlib
 
@@ -63,7 +78,7 @@ ax.xaxis.set_label_text('epoch')
 
 i=0;
 #while ((abs(delta) > 1) and (train_acc < .999)):    
-while abs(delta) > 1e-3:
+while abs(delta) > epsilon:
 
     i+=1
 
@@ -91,6 +106,12 @@ while abs(delta) > 1e-3:
     print "delta: %f" % abs(delta)
     print "Training accurcay: %f" % train_acc
 
+    print "Accuracy on validation set:"
+    vallos,valgrad,valscores = svm.SVM_loss(svm.Xval_rows,svm.Yval,W,reg)
+    predicted_class = np.argmax(valscores,axis=1)
+    val_acc = np.mean(predicted_class == svm.Yval.astype('int64'))
+    print val_acc
+
     delta = orig_loss-loss
 
     orig_loss = loss
@@ -101,7 +122,7 @@ print "Predicted:"
 print np.argmax(scores, axis=1)
 print "Actual:"
 print svm.Ytr.astype('int64')
-print W
+#print W
 
 print "Test data"
 
@@ -116,7 +137,6 @@ print "Accuracy on test set: "
 predicted_class = np.argmax(scores, axis=1)    
 test_acc=(np.mean(predicted_class == svm.Yte.astype('int64')))
 print test_acc
-
 
 params = "W.pkl"
 out = open(params,'wb')

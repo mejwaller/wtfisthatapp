@@ -24,8 +24,7 @@ Ytr_base=[]
 del Xtr_base
 del Ytr_base
 
-
-f = open("hyperdsearch.csv","w")
+f = open("hypersearch.csv","w")
 
 f.write("validation fold,step_size,reg,loss,train_acc,val_acc\n")
 

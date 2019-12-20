@@ -27,7 +27,7 @@ del Ytr_base
 
 f = open("hypersearch.csv","w")
 
-f.write("validation fold,step_size,reg,loss,train_acc,val_acc\n")
+f.write("step_num,reg_num,validation fold,step_size,reg,loss,train_acc,val_acc\n")
 
 #use 9 randomized values of each hyperpara,eter (there are two - step_size and reg strength)
 for a in range(0,9):
@@ -67,7 +67,7 @@ for a in range(0,9):
 
             f2.write("epoch,step_size,reg,loss,train_acc,val_acc\n")
 
-            for epoch in range(0,5):
+            for epoch in range(0,9):
 
                 print "Epoch %d" % epoch
 
@@ -95,7 +95,7 @@ for a in range(0,9):
 
                 f2.write(f2str)
 
-            fstr = str(z) + "," + str(step_size) + "," + str(reg) + "," + str(loss) + "," + str(train_acc) + "," + str(val_acc) + "\n"
+            fstr = str(a) + "," + str(b) + "," + str(z) + "," + str(step_size) + "," + str(reg) + "," + str(loss) + "," + str(train_acc) + "," + str(val_acc) + "\n"
 
             f.write(fstr)
 

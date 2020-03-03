@@ -33,7 +33,7 @@ class datutils:
 
 
 
-    def loadData(self,ROOT="",num=13):
+    def loadData(self,ROOT="",num=14):
 
         X_tr, Y_tr = self.loadTraining(ROOT,num)
 

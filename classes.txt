@@ -1802,6 +1802,16 @@ IMG_1345,"Chrysoteuchia culmella"
 IMG_1346,"Dingy Footman"
 IMG_1347,"Sharp-angled Peacock"
 IMG_1351,"Cydia splendana"
+IMG_1354,"Buff Footman"
+IMG_1355,"Smoky Wainscot"
+IMG_1357,"Flame"
+IMG_1358,"Blastobasis lacticolella"
+IMG_1359,"Caloptilia alchimiella/robustella"
+IMG_1361,"SWallow Prominent"
+IMG_1364,"Silky Wainscot"
+IMG_1366,"Large Yellow Underwing"
+IMG_1369,"Clay"
+
 
 
 

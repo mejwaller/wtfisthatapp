@@ -34,6 +34,7 @@ int main(int argc, char **argv)
 
 	       struct jpeg_decompress_struct cinfo;
 	       struct jpeg_error_mgr jerr;
+	       int height;
 
 	       cinfo.err = jpeg_std_error(&jerr);
 	       jpeg_create_decompress(&cinfo);
@@ -52,6 +53,8 @@ int main(int argc, char **argv)
 	       printf("output_height: %d\n", cinfo.output_height);
 	       */
 
+	       height= cinfo.output_height;
+
 	       JSAMPARRAY lines = (JSAMPARRAY)malloc(cinfo.output_height*sizeof(JSAMPROW));
 	       for(i=0; i<cinfo.output_height; i++) 
 		       lines[i] = (JSAMPROW)malloc(cinfo.output_width*cinfo.output_components*sizeof(JSAMPLE));
@@ -66,12 +69,15 @@ int main(int argc, char **argv)
 	      printf("Finishing decompress...\n");
 	      jpeg_finish_decompress(&cinfo);
 
-	      /* do resizing...*/
-
 	      printf("Cleainign up...\n");
 	      jpeg_destroy((j_common_ptr)&cinfo);
 
+	      /*do resizing*/
+
 	      printf("Freeing memory...\n");
+
+	      for(i=0; i< height; i++)
+		      free(lines[i]);
 	      free(lines);
 
 	      fclose(infile);

@@ -1,5 +1,6 @@
 CC = gcc
 CFLAGS = -O2 -Wall
+#obtain and compile from https://ijg.org or use a distro supplied version
 LDFLAGS = -L/usr/lib/x86_64-linux-gnu/ -L/usr/local/lib/
 LIBS=jpeg
 

@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -O2 -Wall
-LDFLAGS = -L/usr/lib/x86_64-linux-gnu/
+LDFLAGS = -L/usr/lib/x86_64-linux-gnu/ -L/usr/local/lib/
 LIBS=jpeg
 
 jpgresizer: jpgresizer.o
